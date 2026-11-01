@@ -142,8 +142,15 @@ class Program
                     break;
 
                 default:
-                    Console.WriteLine("invalid choice.");
+                    Console.WriteLine("Invalid choice.");
                     break;
+            }
+
+            // Wait for enter before showing menu again
+            if (running)
+            {
+                Console.Write("\nPress enter to continue.");
+                Console.ReadLine();
             }
         }
 
@@ -151,8 +158,8 @@ class Program
         // Display a message when the program finishes.
         Console.WriteLine("\nProgram finished.");
 
-        // Wait for enter before closing.
-        Console.Write("Press Enter to close...");
+        // Wait for enter before closing
+        Console.Write("Press enter to close.");
         Console.ReadLine();
     }
 }
