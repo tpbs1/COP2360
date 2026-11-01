@@ -150,5 +150,9 @@ class Program
         // STEP 10: End the Program
         // Display a message when the program finishes.
         Console.WriteLine("\nProgram finished.");
+
+        // Wait for enter before closing.
+        Console.Write("Press Enter to close...");
+        Console.ReadLine();
     }
 }
